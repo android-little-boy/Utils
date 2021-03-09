@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_bg">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginVertical="12dp"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/tv_dialog_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3e3e3e"
+                android:textSize="13sp"
+                />
+
+        </ScrollView>
+        
+    </LinearLayout>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dialog_bg"
+        android:text="返回"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="向下"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:textSize="10sp"
+        android:layout_marginEnd="4dp"
+        />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/tv_down"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/down"
+        android:layout_marginBottom="-4dp"
+        android:layout_marginEnd="2dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="2dp"
+        android:text="向上"
+        android:textSize="10sp"
+        />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/tv_up"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/up"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="2dp"
+        />
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_up"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/up"-->
+<!--        android:layout_below="@id/iv_up"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:textColor="@color/dialog_tv_color2"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_up"-->
+<!--        android:layout_width="24dp"-->
+<!--        android:layout_height="24dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_below="@id/tv_up"-->
+<!--        android:src="@mipmap/up"-->
+<!--        />-->
+
+</RelativeLayout>
